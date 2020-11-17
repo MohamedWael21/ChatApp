@@ -1,0 +1,426 @@
+/* home page */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.chatApp{
+    font-family: "courgette",sans-serif,Arial;
+}
+.chatApp .bar .left-side {
+    position: relative;
+    background-color: #3a3a3a;
+    border: 2px solid #000;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+.chatApp .bar .left-side i{
+    position: absolute;
+    color: #fff;
+    top: 42px;
+    left: 94px;;
+}
+.chatApp .bar .left-side a{
+    padding: 10px 25px;
+}
+.chatApp .bar .right-side{
+    height: 100px;
+    background-color: #3a3a3a;
+    border: 2px solid #000;
+    line-height: 100px;
+    color: #fff;
+    position: relative;
+}
+
+.chatApp .bar .right-side img {
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chatApp .bar .right-side a {
+    position: absolute;
+    right: 20px;
+    top:30%;
+}
+
+.chatApp .main-section .left-side{
+    background-color: #3a3a3a;
+    overflow-y: scroll;
+    color:#fff;
+}
+.chatApp .main-section .left-side .friend-box{
+    padding: 30px;
+    display: flex;
+}
+.chatApp .main-section .left-side .friend-box img{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.chatApp .main-section .left-side .friend-box .info p{
+    margin: 0px;
+    cursor: pointer;
+}
+.chatApp .main-section .left-side .friend-box .info p a{
+    color: #fff;
+    text-decoration: none;
+}
+.chatApp .main-section .left-side .friend-box .info span{
+    font-size: 16px;
+    margin-left: 4px;
+    color:#a09e9e;
+}
+.chatApp .main-section .left-side .friend-box .info i{
+    font-size: 8px;
+    color: #a09e9e;
+}
+.chatApp .main-section .right-side{
+    position: relative;
+    padding: 0px;
+}
+.chatApp .main-section .right-side .foot{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: #3a3a3a;
+    padding: 10px;
+}
+.chatApp .main-section .right-side .foot input{
+    width:70%;
+    display: inline-block;
+    margin-right: 6px;
+}
+.chatApp .main-section .right-side .foot button{
+    padding: 8px 25px;
+}
+.chatApp .main-section .right-side .foot button:focus{
+    border:none;
+}
+
+
+.chatApp .main-section .right-side .mesg-cont{
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.chatApp .main-section .right-side .mesg-cont .messageRow{
+    display: grid;
+    grid-template-columns: 70%;
+    margin-bottom: 70px;
+    margin-right: 20px;
+}
+.chatApp .main-section .right-side .mesg-cont .messageRow:nth-child(1){
+    margin-top: 20px;
+}
+.chatApp .main-section .right-side .mesg-cont .messageRow .message-content{
+    display: grid;
+}
+
+.chatApp .main-section .right-side .mesg-cont .messageRow .message-text{
+    padding: 9px 14px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.chatApp .main-section .right-side .mesg-cont .messageRow .message-date{
+    font-size: 15px;
+    color:#777;
+}
+.chatApp .main-section .right-side .mesg-cont .messageRow img{
+    widows: 60px;
+    height: 60px;
+    border-radius: 100%;
+    grid-row: span 2;
+}
+
+.chatApp .main-section .right-side .mesg-cont .yourmessage .message-text{
+    background-color: #00ccff;
+    color: #eee;
+    border: 1px solid #00ccff;
+    border-radius: 14px 14px 0 14px;
+}
+.chatApp .main-section .right-side .mesg-cont .yourmessage{
+    justify-content: end;
+}
+
+.chatApp .main-section .right-side .mesg-cont .yourmessage .message-content{
+    justify-items: end;
+}
+
+.chatApp .main-section .right-side .mesg-cont .othermessage .message-text{
+    background-color: #32cd32;
+    color: #eee;
+    border: 1px solid #32cd32;
+    border-radius: 14px 14px 14px 0px;
+}
+.chatApp .main-section .right-side .mesg-cont .othermessage{
+    justify-items: start;
+}
+.chatApp .main-section .right-side .mesg-cont .othermessage .message-content{
+    grid-template-columns: 48px 1fr;
+    column-gap: 15px;
+
+}
+/* home page */
+
+/* add-user page */
+.add-user .bar,.setting .bar,.update-picture .bar{
+    background-color: #3a3a3a;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.add-user .bar a , .setting  .bar a,.update-picture .bar a{
+text-decoration: none;
+color: #eee;
+font-size: 25px;
+margin-left: 20px;
+}
+
+.add-user .cont{
+    width: 400px;
+    margin: auto;
+}
+.add-user .cont form {
+    display: flex;
+    margin-bottom: 30px;
+}
+.add-user .cont form input[type="search"]{
+   width: 300px;
+   background-color: #3a3a3a;
+   color: #eee;
+   margin-right: 0px; 
+   padding: 13px 8px;
+}
+.add-user .cont form input[type="search"]:focus{
+    border: none;
+    outline: none;
+}
+
+
+.add-user .cont form input[type="submit"]{
+    width: 100px;
+    background-color: #3a3a3a;
+    color: #eee;
+    border: 1px solid #3a3a3a;
+    outline: none;
+}
+
+.add-user .cont form input[type="submit"]:focus{
+    background-color: #3a3a3a;
+}
+
+.add-user .cont .users .user{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 2px solid #d2cbcb;
+
+}
+.add-user .cont .users .user .img-con,.add-user .cont .users .user .info{
+        height: 50%;
+}
+
+.add-user .cont .users .user .img-con img{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+
+}
+
+.add-user .cont .users .user .info{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: space-between;
+}
+.add-user .cont .users .user .info .name{
+    font-weight: normal;
+    font-size: 60px;
+}
+.add-user .cont .users .user .info .country{
+    color: #777;
+    font-size: 20px;
+}   
+
+.add-user .cont .users .user .info .gender{
+    font-size: 16px;
+    font-weight: bold;
+}
+.add-user .cont .users .user .info .add-user{
+    background-color: #000;
+    padding: 6px;
+    transition: all .2s ease-in-out;
+    cursor:pointer;
+    margin-bottom: 20px;
+}
+.add-user .cont .users .user .info .add-user a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.add-user .cont .users .user .info .add-user:hover{
+    background-color: rgba(0,0,0, 0.8);
+}
+/* add-user page */
+
+body{
+    position: relative;
+}
+
+.setting .update-user {
+    width: 800px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+.setting .update-user table h1{
+    text-align: center;
+}
+.setting .update-user form{
+    width:100%
+}
+.setting .update-user form table{
+    width: 100%;
+}
+table ,tr,td{
+    border: 1px solid #9a9090;
+    border-collapse: collapse;
+    padding: 20px;
+
+}
+
+table label{
+    font-size: 25px;
+}
+
+table td span{
+    color: #0d6efd;
+    cursor: pointer;
+    user-select: none;
+}
+table td a:hover{
+    text-decoration: none;
+}
+
+.dialog{
+    display: none;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    padding: 40px 10px;
+}
+
+.dialog .close-icon{
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+}
+.dialog .close-icon i{
+    cursor: pointer;
+    font-size: 20px;
+    color: #c1b3b3;
+}
+
+.dialog .close-icon i:hover{
+    color: #3a3a3a;
+}
+
+.dialog .disc{
+    margin-top: 30px;
+    overflow-wrap: nowrap;
+    overflow-x: scroll;
+}
+.dialog span{
+    margin-bottom: 20px;
+    float: right;
+}
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.dialog hr{
+    margin: 20px 0;
+}
+.dialog  textarea{
+    width: 100%;
+    height: 100px;
+}
+
+.update-picture .cont{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #777;
+}
+
+.update-picture .cont .picture{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+}
+.update-picture .cont .picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.update-picture .cont .name {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+.update-picture .cont .form-con{
+    color: #fff;
+    background-color: #000;
+    padding: 10px 10px;
+}
+.update-picture .cont .form-con input[type="file"]{
+    display: none;
+}
+.update-picture .cont .form-con label{
+    cursor: pointer;
+}
+.update-picture .cont .form-con input[type="submit"]{
+    border:none;
+    color: #fff;
+    background-color: transparent;
+}
+
+#confirm_pass_error{
+    display: none;
+    position: relative;
+    margin: 10px 0;
+    border:none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#confirm_pass_error::before
+{
+    content: "*";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    left:2px;
+    top:5px
+}
+/* setting page */
+
+

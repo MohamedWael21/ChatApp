@@ -1,0 +1,81 @@
+body{
+    font-family: "Roboto",sans-serif;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+.login,.sign,.pass{
+    width:30%;
+    margin:auto;
+    margin-top:30px;
+}
+
+.login .header,.sign .header, .pass .header{
+    background-color:#00cb82;
+    padding: 30px;
+    border-radius: 3px;
+    color:#fff;
+}
+
+.login .header h2 ,.sign .header h2, .pass .header h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Pacifico",sans-serif;
+}
+.login .header p , .sign .header p , .pass .header p{
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 15px;
+    font-family: "courgette",sans-serif;
+}
+.login .form , .sign .form ,.pass .form{
+    background-color: #f0f0f0;
+}
+
+.login .form form ,.sign .form form ,.pass .form form{
+    padding: 20px;
+}
+
+.login .form input:focus, .sign .form input:focus ,.pass .form input:focus{
+    outline: none;
+    border: 2px solid #00cb82;
+}
+
+.login input[type="submit"],.sign  input[type="submit"],.pass input[type="submit"] {
+    background-color: #00cb82;
+    color: #fff;
+}
+
+.login .form label ,.sign .form label,.pass .form label{
+    font-weight: normal;
+    font-size: 14px;
+    color: #999;
+}
+.login .form .forgot p{
+    color: #999;
+    font-size: 13px;
+}
+.login .form .forgot p a{
+    color: #00cb82;
+}
+
+.login .foot, .sign .foot{
+    color: #fff;
+    margin-top: 20px;
+}
+.login .foot p a , .sign .foot p a{
+    color: #00cb82;
+}
+
+.sign .check{
+    margin-bottom: 10px;
+}
+.sign .check a{
+    color: #00cb82;
+}
+
+@media only screen and (max-width:935px){
+
+    .login,.sign,.pass{
+        width:60%;
+    }
+}
